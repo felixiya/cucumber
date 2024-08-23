@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-22T11:27:43.480Z",
+        "line": 2,
+        "name": "Create new account",
+        "description": "",
+        "id": "create-new-account-in-facebook;create-new-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2419695500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Launch the facebook application \"https://www.facebook.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.facebook.com/\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.bookMyShow.facebook.launch_the_facebook_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8001300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Validate the launched facebook application \"https://www.facebook.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.facebook.com/\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.bookMyShow.facebook.validate_the_launched_facebook_application(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47637800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on create new account",
+            "match": {
+              "location": "com.bookMyShow.facebook.user_click_on_create_new_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 510200800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send the Firstname one dim list",
+            "match": {
+              "location": "com.bookMyShow.facebook.user_send_the_firstname_one_din_list(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "feliciya",
+                  "joseph",
+                  "godwin",
+                  "fewin",
+                  "fewina"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75147600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User send the Surname one dim map",
+            "match": {
+              "location": "com.bookMyShow.facebook.user_send_the_surname_one_dim_map(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "felixiya"
+                ]
+              },
+              {
+                "cells": [
+                  "sname",
+                  "mala"
+                ]
+              },
+              {
+                "cells": [
+                  "last",
+                  "mathu"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create new account in facebook",
+    "description": "",
+    "id": "create-new-account-in-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Facebook.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User launch applicationand clicks on movies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2344897900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch the book My Show application",
+            "match": {
+              "location": "com.bookMyShow.Movies.launch_the_book_my_show_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23839900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Validate the launched application",
+            "match": {
+              "location": "com.bookMyShow.Movies.validate_the_launched_application()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 469368300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters city and choose the city",
+            "match": {
+              "location": "com.bookMyShow.Movies.user_enters_city_and_choose_the_city()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 539642700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on Movies",
+            "match": {
+              "location": "com.bookMyShow.Movies.user_clicks_on_movies()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-22T11:27:46.602Z",
+        "line": 10,
+        "name": "Book a Tamil Movie",
+        "description": "",
+        "id": "book-a-movie-under-movies;book-a-tamil-movie",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 328602800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Select the Tamil language",
+            "match": {
+              "location": "com.bookMyShow.Movies.user_select_the_tamil_language()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click on Genresss",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Book a Movie under Movies",
+    "description": "",
+    "id": "book-a-movie-under-movies",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Movies.feature",
+    "tags": []
+  }
+]

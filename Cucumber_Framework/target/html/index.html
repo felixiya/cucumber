@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cucumber Features</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="formatter.js"></script>
+    <script src="report.js"></script>
+  </head>
+  <body>
+    <div class="cucumber-report"></div>
+  </body>
+</html>
+
+
+File f=new File("C:\\Users\\2RIN\\eclipse-workspace\\Cucumber_Framework\\src\\test\\resources\\Properties\\ExcelProperties");
+		FileInputStream file = new FileInputStream(f); 
+		Properties prop=new Properties();
+		prop.load(file);
+		String st=(String)prop.get(string);
+		List<String>excel=ExcelUtils.excelread(st, sheetname);
+		for(int i=0;i<excel.size();i++) {
+			Thread.sleep(3000);
+			String string2=excel.get(i);
+			System.out.println(string2 );
